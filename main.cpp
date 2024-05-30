@@ -96,4 +96,6 @@ int main(int argc, char *argv[]) {
 		print_char_with_color(c, rgb);
 		hue += 10;
 	}
+
+	std::cout << "\x1b[0m";
 }
