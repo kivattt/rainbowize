@@ -84,7 +84,6 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 
-	std::srand(time(nullptr));
 	long long time = std::chrono::high_resolution_clock::now().time_since_epoch().count();
 	std::srand(time);
 	int randomHueOffset = rand() / double(RAND_MAX) * 360;
